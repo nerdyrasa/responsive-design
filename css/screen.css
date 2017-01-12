@@ -313,6 +313,31 @@ nav > ul > li > a {
     padding: 10px 20px 15px 20px;
 }
 
+nav a[aria-haspopup="true"]::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    /* Make a triange that is pointing to the right*/
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid white;
+}
+
+/* Make a triangle that is pointing down */
+nav > ul > li > a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 20px;
+    right: auto;
+    bottom: 6px;
+    top: auto;
+}
+
 /* Footer */
 
 footer {
