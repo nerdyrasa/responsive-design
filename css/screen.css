@@ -663,5 +663,18 @@ footer a:hover {
         margin: 10px 40px 0 20px;
     }
 
+    footer::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    footer div.content a{
+        display: inline-block;
+        margin: 0 0 10px 0;
+        float: left;
+        clear: both;
+    }
+
 
 }
