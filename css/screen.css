@@ -518,11 +518,99 @@ footer a:hover {
         background-size: 300px auto;
         min-height: initial;
     }
-    
+
+    section.how-to aside {
+        width: 100%;
+        float: none;
+        margin: 0;
+        position: relative;
+    }
+
+    section.how-to aside div.content {
+        padding: 20px 20px 20px 150px;
+    }
+
+    section.how-to aside div.content p {
+        font-size: .9em;
+    }
+
+    section.how-to aside div.content img {
+        display: inline-block;
+        width: 125px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    section.how-to blockquote {
+        margin: 0 20px 0 40px;
+        width: 90%;
+        padding: 1px 0 20px 0;
+        position: relative;
+    }
+
+    section.how-to blockquote p.credit {
+        margin-bottom: 0;
+    }
+
     nav {
         position: static;
         width: auto;
         padding: 20px 15px;
         background-color: #4b0a0c;
+    }
+
+    nav ul,
+    nav ul ul,
+    nav ul ul ul {
+        display: block;
+        position: static;
+    }
+
+    nav > ul {
+        padding: 0;
+    }
+    nav > ul > li {
+        float: none;
+        margin-top: 25px;
+    }
+    
+    nav ul li:hover {
+        background: none;
+    }
+    
+    nav ul li a {
+        width: auto;
+        display: block;
+        margin: 8px 10px;
+        padding: 8px 15px;
+        border: 1px solid rgba(255, 255, 255, .25);
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, .2);
+    }
+
+    nav ul ul {
+        background: none;
+    }
+
+    nav ul ul li a {
+        margin-left: 30px;
+    }
+    nav ul ul ul li a {
+        margin-left: 60px;
+    }
+    nav a[aria-haspopup="true"]::after {
+        display: none;
+    }
+
+    footer div.content {
+        display: block;
+        margin-top: 15px;
+    }
+
+    footer div.content a {
+        margin: 0 20px 0 0;
     }
 }
