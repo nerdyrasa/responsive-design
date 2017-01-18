@@ -635,16 +635,16 @@ footer a:hover {
     }
 
     header a.logo{
-        width: 126px;
-        height: 26px;
-        background-image: url(../images/logo_small.svg);
+        width: 124px;
+        height: 20px;
         top: 15px;
+        background-size: 124px 51px;
     }
 
     header div.hero{
         width: 100%;
         left: 0;
-        top: 50px;
+        top: 58px;
         text-align: center;
     }
 
